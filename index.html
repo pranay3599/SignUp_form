@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resource/form.png?" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+    <nav style="border-bottom: 2px white solid;">
+        <div class="p-2 text-white d-flex justify-content-between">
+            <a href="#" class="text-decoration-none text-white fs-5">Header</a>
+            <div>
+                <a href="" class="text-decoration-none text-white fs-5 mx-3">Signup</a>
+                <a href="profile.html" class="text-decoration-none text-white fs-5 mx-3">Profile</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container my-5">
+            <div class="card border-0">
+                <div class="card-header bg-black text-white border-0">
+                    <h3 class="card-title">Signup</h3>
+                </div>
+                <div class="card-body bg-black text-white">
+                    <label for="fullname">Full Name</label>
+                        <input class="ipt fs-5 bg-black text-white" id="fullname" type="text"/>
+                        <label for="email">Email</label>
+                        <input class="ipt fs-5 bg-black text-white" id="email" type="text" />
+                        <label for="password">Password</label>
+                        <input class="ipt fs-5 bg-black text-white" id="password" type="password" />
+                        <label for="confirmpassword">Confirm Passsword</label> 
+                        <input class="ipt fs-5 bg-black text-white" id="confirmpassword" type="Password" />
+                        <p id="message" class="fs-5"></p>
+                        <div id="timer"></div>
+                        <button class="btn text-white fs-3" onclick="signUp()" id="signup">Signup</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

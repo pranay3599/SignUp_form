@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resource/profile.png?" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body onload="Profile()" style="background-color: black;">
+     <nav style="border-bottom: 2px white solid;">
+        <div class="p-2 text-white d-flex justify-content-between">
+            <a href="#" class="text-decoration-none text-white fs-5">Header</a>
+            <div>
+                <a href="#" class="text-decoration-none text-white fs-5 mx-3">Signup</a>
+                <a href="profile.html" class="text-decoration-none text-white fs-5 mx-3">Profile</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="card bg-black text-white">
+                <div class="card-body">
+                    <h1 class="my-5">Profile</h1>
+                    <hr class="hori">
+                    <h4 class="userf">Full Name : <span id="username"></span></h4>
+                    <h4 class="my-4 userf">Email : <span id = "useremail"></span></h4>
+                    <h4 class="userf">Password :<span id = "userpass"></span></h4>
+                </div>
+            </div>
+            <div id="lb">
+                <button onclick="logout()" class="logout border-0  fs-5 mx-3 btn-default">Logout</button>
+            </div>
+          </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
